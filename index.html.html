@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Blue - Diamonds & Precious Stones</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; background: linear-gradient(135deg, #0f0f23, #1a1a3e); }
+        header { background: rgba(0,0,50,0.9); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .logo { font-size: 2rem; color: #00bfff; font-weight: bold; text-decoration: none; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 2rem; }
+        .nav-links a { color: white; text-decoration: none; font-weight: bold; }
+        .hero { height: 100vh; background: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover; display: flex; align-items: center; justify-content: center; text-align: center; color: white; padding-top: 80px; }
+        .hero-content h1 { font-size: 4rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.5rem; margin-bottom: 2rem; }
+        .cta { background: #00bfff; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: bold; transition: transform 0.3s; }
+        .cta:hover { transform: scale(1.05); }
+        section { padding: 5rem 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 3rem; margin-bottom: 3rem; color: #00bfff; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .gem-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem; text-align: center; color: white; transition: transform 0.3s; }
+        .gem-card:hover { transform: translateY(-10px); }
+        .gem-card img { width: 100%; height: 250px; object-fit: cover; border-radius: 15px; margin-bottom: 1rem; }
+        .gem-card h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+        footer { background: rgba(0,0,50,0.9); color: white; text-align: center; padding: 2rem; }
+        .social { margin-top: 1rem; }
+        .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: transform 0.3s; z-index: 1000; }
+        .whatsapp:hover { transform: scale(1.1); }
+        @media (max-width: 768px) { .nav-links { display: none; } .hero h1 { font-size: 2.5rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Royal Blue</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gems">Gems</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Discover Royal Blue</h1>
+            <p>Exquisite Diamonds & Precious Stones</p>
+            <a href="#gems" class="cta">Explore Collection</a>
+        </div>
+    </section>
+
+    <section id="gems">
+        <h2>Our Precious Collection</h2>
+        <div class="grid">
+            <div class="gem-card">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Diamonds">
+                <h3>Brilliant Diamonds</h3>
+                <p>Sparkling diamonds in various cuts and carats, perfect for any occasion.</p>
+            </div>
+            <div class="gem-card">
+                <img src="https://images.unsplash.com/photo-1558618047-3c8c76bbb17e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sapphires">
+                <h3>Royal Sapphires</h3>
+                <p>Deep blue sapphires symbolizing luxury and elegance.</p>
+            </div>
+            <div class="gem-card">
+                <img src="https://images.unsplash.com/photo-1588354689836-8593423368eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Emeralds">
+                <h3>Vivid Emeralds</h3>
+                <p>Lush green emeralds capturing nature's finest beauty.</p>
+            </div>
+            <div class="gem-card">
+                <img src="https://images.unsplash.com/photo-1574179208501-42e91b3dc4ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Rubies">
+                <h3>Passionate Rubies</h3>
+                <p>Fiery red rubies for timeless passion and power.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div style="text-align: center; color: white; font-size: 1.2rem;">
+            <p>Phone: <a href="tel:+919585747958" style="color: #00bfff;">+91 95857 47958</a></p>
+            <p>Email: <a href="mailto:pragatheesvicky8@gmail.com" style="color: #00bfff;">pragatheesvicky8@gmail.com</a></p>
+            <p>Website: <a href="https://www.royalblue.co.in" style="color: #00bfff;" target="_blank">www.royalblue.co.in</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Royal Blue. All rights reserved. | Crafting excellence in diamonds and gems.</p>
+        <div class="social">
+            <p>Follow us for exclusive offers!</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919585747958?text=Hi%20Royal%20Blue!%20I'm%20interested%20in%20diamonds%20and%20precious%20stones." class="whatsapp" target="_blank">
+        💎
+    </a>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
